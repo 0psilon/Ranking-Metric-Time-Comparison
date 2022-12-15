@@ -8,7 +8,7 @@ Three different implementations of the Mean Reciprocal Rank (MRR) metric were ma
 Time table (seconds for 10 iterations):
 
 | N users | Algorithm | MRR@10 | MRR@50 | MRR@100 |
-| --- | --- | --- | --- | --- |
+| :---: | --- | :---: | :---: | :---: |
 | | | | |
 | 100 | Regular | 0.0442 | 0.1624 | 0.1900 |
 |     | Numba | 0.0016 | 0.0014 | 0.0017 |

@@ -25,3 +25,15 @@ Time table (seconds for 10 iterations):
 | 100000 | Regular | 1989.523 | 1989.523 | 2261.472 |
 |        | Numba | 1196.412 | 1145.607 | 1207.306 |
 |        | Pandas | 7.183 | 19.685 | 49.375 |
+| | | | | |
+
+
+Visualization of time estimation for 10000 and 100000-user case scenario:
+<p align="center"><img src="./README_materials/bars10k.png"\></p>
+<p align="center"><img src="./README_materials/bars100k.png"\></p>
+
+More graphics [here](RecSysMetrics.ipynb)
+
+## Conclusion:
+Pandas vector operations show the best performance on big amounts of data and leave loop-implementations of the metric far behind. However, if loops cannot be avoided, Numba JIT-compilation noticeably decreases the operation time. Regular loop-implementation shows the worst results.
+

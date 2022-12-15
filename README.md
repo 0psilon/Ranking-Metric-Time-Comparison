@@ -1,9 +1,11 @@
 # MRR-Metric-Time-Comparison
 
-Three different implementations of the Mean Reciprocal Rank (MRR) metric were made in order to compare their performance on different amounts of data. The folowing implementations:
+Three different implementations of the Mean Reciprocal Rank (**MRR**) metric were made in order to compare their performance on different amounts of data. Those implementations are:
 * Pandas (vector operations)
-* Regular for loops
-* Regular for loops boosted with Numba JIT-compilation
+* Regular for loops (Naive)
+* Regular for loops boosted with Numba (JIT-compilation)
+
+**CPU**: Intel(R) Xeon(R) CPU @ 2.20GHz
 
 Time table (seconds for 10 iterations):
 
@@ -28,7 +30,7 @@ Time table (seconds for 10 iterations):
 | | | | | |
 
 
-Visualization of time estimation for 10000 and 100000-user case scenario:
+Visualization of time estimations for 10000 and 100000-user case scenarios:
 <p align="center"><img src="./README_materials/bars10k.png"\></p>
 <p align="center"><img src="./README_materials/bars100k.png"\></p>
 
